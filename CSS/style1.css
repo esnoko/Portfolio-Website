@@ -116,3 +116,9 @@ span{
     border: 1px solid var(--main-color);
     transition: all .40s ease;
 }
+
+.btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}

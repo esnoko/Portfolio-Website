@@ -122,3 +122,9 @@ span{
     background: transparent;
     border: 1px solid var(--main-color);
 }
+
+header.sticky{
+    padding: 10px 16%;
+    background: var(--bg-color);
+    border-bottom: 1px solid #0e1630;
+}

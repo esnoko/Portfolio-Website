@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Exclusive Music player",
+    "imageSrc": "projects/Fera.png",
+    "description": "This is an Exclusive-Music-player built to demonstrate skills in HTML, CSS, and JavaScript, with validation and responsive design.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://esnoko.github.io/HexSoftwares_Exclusive-Music-player/",
+    "source": "https://github.com/esnoko/HexSoftwares_Exclusive-Music-player.git"
+  },
+  {
+    "title": "Animated-Coca-Cola-Project",
+    "imageSrc": "projects/Cola.png",
+    "description": "This is an Animated-Coca-Cola-Project built to demonstrate skills in HTML and CSS, with a responsive design.",
+    "skills": ["HTML", "CSS"],
+    "demo": "https://esnoko.github.io/Animated-Coca-Cola-Project/",
+    "source": "https://github.com/esnoko/Animated-Coca-Cola-Project.git"
+  }
+]

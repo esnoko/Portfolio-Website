@@ -6,6 +6,11 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 10%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--color-bg);
 }
 
 .title {
@@ -14,7 +19,8 @@
   width: 200px;
   text-decoration: none;
   color: var(--color-text);
-  background-color: lightblue;
+  display: flex;
+  align-items: center;
 }
 
 .name{
@@ -22,7 +28,6 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
-  background-color: lightpink;
   flex: 1;
 }
 
@@ -33,7 +38,7 @@
 
 .menu {
   display: flex;
-  background-color: lightblue;
+  align-items: center;
 }
 
 .menuItems {

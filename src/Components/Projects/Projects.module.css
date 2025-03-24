@@ -6,6 +6,7 @@
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  min-height: 100vh; 
 }
 
 .title {

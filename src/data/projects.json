@@ -14,5 +14,13 @@
     "skills": ["HTML", "CSS"],
     "demo": "https://esnoko.github.io/Animated-Coca-Cola-Project/",
     "source": "https://github.com/esnoko/Animated-Coca-Cola-Project.git"
+  },
+  {
+    "title": "MovieHive",
+    "imageSrc": "projects/movie.png",
+    "description": "This is a simple MovieHive React application that allows users to search for movies using the OMDB API.",
+    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "demo": "https://esnoko.github.io/Movie_app/",
+    "source": "https://github.com/esnoko/Movie_app.git"
   }
 ]

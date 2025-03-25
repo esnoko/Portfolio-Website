@@ -3,12 +3,12 @@
     "title": "Exclusive Music player",
     "imageSrc": "projects/Fera.png",
     "description": "This is an Exclusive-Music-player built to demonstrate skills in HTML, CSS, and JavaScript, with validation and responsive design.",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "skills": ["HTML", "CSS", "JS"],
     "demo": "https://esnoko.github.io/HexSoftwares_Exclusive-Music-player/",
     "source": "https://github.com/esnoko/HexSoftwares_Exclusive-Music-player.git"
   },
   {
-    "title": "Animated-Coca-Cola-Project",
+    "title": "Animated-Coca-Cola",
     "imageSrc": "projects/Cola.png",
     "description": "This is an Animated-Coca-Cola-Project built to demonstrate skills in HTML and CSS, with a responsive design.",
     "skills": ["HTML", "CSS"],
@@ -19,7 +19,7 @@
     "title": "MovieHive",
     "imageSrc": "projects/movie.png",
     "description": "This is a simple MovieHive React application that allows users to search for movies using the OMDB API.",
-    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "skills": ["HTML", "CSS", "React.js"],
     "demo": "https://esnoko.github.io/Movie_app/",
     "source": "https://github.com/esnoko/Movie_app.git"
   }

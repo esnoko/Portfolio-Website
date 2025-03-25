@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 
@@ -5,6 +6,7 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
+  // eslint-disable-next-line react/prop-types
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
   return (

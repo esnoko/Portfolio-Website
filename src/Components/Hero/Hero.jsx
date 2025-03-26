@@ -8,13 +8,13 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm NokoDev</h1>
+        <h1 className={styles.title}>Hi, I&apos;m NokoDev</h1>
         <p className={styles.description}>
-          I'm a Software Developer specializing in full-stack development with
+          I&apos;m a Software Developer specializing in full-stack development with
           React, Node.js, and Spring Boot. I have experience with Flutter,
           Angular, Vue, Laravel, Next.js and Express.js, along with MySQL,
           MongoDB, Docker, Firebase, and Git. Passionate about building scalable
-          web/mobile apps and continuously learning new technologies. Let’s
+          web/mobile apps and continuously learning new technologies. Let&apos;s
           connect!
         </p>
         <button className={styles.contactBtn}>

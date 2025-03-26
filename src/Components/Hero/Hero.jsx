@@ -10,14 +10,18 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm NokoDev</h1>
         <p className={styles.description}>
-          I'm a Software Developer specializing in full-stack development with React, Node.js, and 
-          Spring Boot. I have experience with Flutter, Angular, Vue, Laravel, Next.js and Express.js, 
-          along with MySQL, MongoDB, Docker, Firebase, and Git. Passionate about building scalable 
-          web/mobile apps and continuously learning new technologies. Let’s connect!
+          I'm a Software Developer specializing in full-stack development with
+          React, Node.js, and Spring Boot. I have experience with Flutter,
+          Angular, Vue, Laravel, Next.js and Express.js, along with MySQL,
+          MongoDB, Docker, Firebase, and Git. Passionate about building scalable
+          web/mobile apps and continuously learning new technologies. Let’s
+          connect!
         </p>
-        <a href="mailto:elvisnoko18@email.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <button className={styles.contactBtn}>
+          <a href="mailto:elvisnoko18@email.com" className={styles.linkBtn}>
+            Contact Me
+          </a>
+        </button>
       </div>
       <img
         src={getImageUrl("hero/hero.png")}

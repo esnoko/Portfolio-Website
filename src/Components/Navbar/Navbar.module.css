@@ -53,6 +53,12 @@
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menuItems a:hover {
+  color: var(--color-primary); /* Change to your desired hover color */
+  text-decoration: none; /* Optional: Add underline on hover */
 }
 
 @media screen and (max-width: 830px) {

@@ -63,19 +63,25 @@
   }
 
   .links {
-    align-items: center;
+    display: flex; /* Ensure flexbox is applied */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between items */
     width: 100%;
   }
 
   .link {
-    width: 100%;
-    justify-content: center;
+    display: flex; /* Ensure flexbox is applied */
+    flex-direction: column; /* Stack icon and link vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Add spacing between icon and link */
+    width: auto; /* Adjust width to fit content */
   }
 
   .link a {
     font-size: 16px;
-    word-break: break-all;
-    text-align: left;
+    word-break: break-word; /* Prevent breaking words awkwardly */
+    text-align: center; /* Center-align text */
   }
 
   .text h2 {

@@ -56,8 +56,8 @@
 }
 
 .resumeBtn {
-  background-color: var(--color-primary);
-  border: none;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
   padding: 17px 26px;
   border-radius: 100px;
   font-size: 22px;
@@ -65,20 +65,18 @@
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
-.resumeBtn {
-  background-color: transparent;
-  border: 2px solid var(--color-primary);
-}
-
- .resumeBtn:hover {
+.resumeBtn:hover {
   background-color: var(--color-primary);
   transform: translateY(-3px);
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 }
 
- .resumeBtn:active {
+.resumeBtn:active {
   opacity: 0.5;
   transform: translateY(1px);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);

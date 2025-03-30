@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -17,11 +16,15 @@ export const Hero = () => {
           web/mobile apps and continuously learning new technologies.
         </p>
         <div className={styles.buttonContainer}>
-          <button className={styles.resumeBtn}>
-            <a href="mailto:elvisnoko18@email.com" className={styles.linkBtn}>
-              Download CV
-            </a>
-          </button>
+          <a 
+            href="public/resume.pdf" 
+            className={`${styles.linkBtn} ${styles.resumeBtn}`}
+            download="NokoDev_Resume.pdf"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
         </div>
       </div>
       <img

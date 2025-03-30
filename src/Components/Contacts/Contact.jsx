@@ -33,7 +33,7 @@ export const Contact = () => {
 
             <footer className={styles.footer}>
                 <div className={styles.footerContent}>
-                    <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} NokoDev. All rights reserved.</p>
                 </div>
             </footer>
         </>

@@ -2,7 +2,6 @@
 
 .container {
   color: var(--color-text);
-  background-color: var(--color-dark);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,16 +11,13 @@
   margin-top: 60px;
   gap: 50px;
   align-items: center;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 5;
 }
 
-/* Add this to fix the scroll-to behavior */
+
 #contact {
-  scroll-margin-top: 80px; /* Adjust based on your navbar height */
+  scroll-margin-top: 80px; 
   display: block;
   width: 100%;
 }
@@ -168,12 +164,11 @@
 }
 
 .footer {
-  background-color: var(--color-dark);
   color: var(--color-text);
   padding: 20px 10%;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footerContent {

@@ -30,7 +30,6 @@ export const Contact = () => {
                     </li>
                 </ul>
             </section>
-
             <footer className={styles.footer}>
                 <div className={styles.footerContent}>
                     <p>© {new Date().getFullYear()} NokoDev. All rights reserved.</p>

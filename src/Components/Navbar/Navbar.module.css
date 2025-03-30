@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: none;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -118,5 +118,13 @@
   
   .menuItems a::after {
     bottom: -3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

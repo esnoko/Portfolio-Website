@@ -6,4 +6,15 @@
   min-height: 100vh;
   position: relative;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0 0 40px 0; /* Add more space between sections */
+  overflow: visible; /* Allow content to be visible */
+  display: block;
 }

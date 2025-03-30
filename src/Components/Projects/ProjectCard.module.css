@@ -3,63 +3,114 @@
 .container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 15px;
   background: var(--color-dark);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
+  box-shadow: 0 10px 20px rgba(4, 21, 45, 0.5);
+  padding: 20px;
   max-width: 345px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(4, 21, 45, 0.6);
 }
 
 .image {
-  margin-bottom: 26px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .title {
-  display: inline-block;
-  width: 310px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--color-primary);
 }
 
 .description {
-  display: inline-block;
-  width: 310px;
-  margin-top: 6px;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
 .skills {
   width: 100%;
-  margin-top: 14px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   list-style: none;
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
   background: var(--color-bg);
-  padding: 2px 22px;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: var(--color-secondary);
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 100px;
+  border-radius: 50px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.link:active {
+  transform: translateY(1px);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+  
+  .skill {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+  
+  .link {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
 }

@@ -2,25 +2,40 @@
 
 .container {
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-dark);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
-  padding: 58px 10%;
-  gap: 10px;
+  min-height: auto;
+  padding: 80px 10% 100px 10%;
+  margin-top: 60px;
+  gap: 50px;
   align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 5;
+}
+
+/* Add this to fix the scroll-to behavior */
+#contact {
+  scroll-margin-top: 80px; /* Adjust based on your navbar height */
+  display: block;
+  width: 100%;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 4px;
+  margin-bottom: 20px;
+  color: var(--color-primary);
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -37,22 +52,61 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: translateX(10px);
+}
+
+.link img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-secondary);
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover img {
+  background-color: var(--color-primary);
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .text h2 {
+    font-size: 50px;
+  }
+  
+  .text p {
+    font-size: 24px;
+  }
+  
+  .link a {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
-    padding: 58px 5%;
-    height: auto;
+    gap: 40px;
+    padding: 60px 5%;
+    margin-top: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 
   .text {
@@ -61,44 +115,54 @@
     align-items: center;
     text-align: center;
   }
-
-  .links {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 20px; 
-    width: 100%;
-  }
-
-  .link {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 10px; 
-    width: auto; 
-  }
-
-  .link a {
-    font-size: 16px;
-    word-break: break-word; 
-    text-align: center; 
-  }
-
+  
   .text h2 {
     font-size: 40px;
   }
 
   .text p {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .links {
+    align-items: center;
+    width: 100%;
+  }
+  
+  .link {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .link a {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .link a {
-    font-size: 14px;
+  .container {
+    padding: 40px 5%;
+    gap: 30px;
+  }
+  
+  .text h2 {
+    font-size: 32px;
+  }
+  
+  .text p {
+    font-size: 16px;
   }
   
   .link {
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .link a {
+    font-size: 16px;
+    word-break: break-word;
+    text-align: center;
   }
 }

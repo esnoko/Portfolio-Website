@@ -2,10 +2,11 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 200px;
+  margin-top: 80px;
   margin-left: 10%;
   margin-right: 10%;
-  min-height: 100vh;
+  min-height: auto;
+  padding: 40px 0;
 }
 
 .title {
@@ -14,27 +15,47 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-primary);
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 30px;
 }
 
 .skills {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 30px;
+  justify-content: center;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
 }
 
 .skillImageContainer {
@@ -43,40 +64,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skillImageContainer:hover {
+  background-color: var(--color-primary);
 }
 
 .skillImageContainer img {
-  width: 75px;
+  width: 60px;
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 18px;
   font-family: var(--font-roboto);
   font-weight: 500;
 }
 
 .history {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .historyItem {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
+  align-items: flex-start;
+  gap: 20px;
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
-  padding: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.historyItem:hover {
+  transform: translateX(5px);
 }
 
 .historyItem img {
   width: 50px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .historyItemDetails {
@@ -84,42 +119,130 @@
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--color-primary);
 }
 
 .historyItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }
 
 .historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 18px; /* Adjusted to a smaller font size */
+  margin-top: 10px;
+  list-style-position: outside;
+  font-size: 16px;
   list-style-type: disc;
   margin-left: 17px;
 }
 
 .historyItemDetails ul li {
-  margin-bottom: 5px; /* Added some spacing between list items */
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1024px) {
+  .skillImageContainer {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .skillImageContainer img {
+    width: 50px;
+  }
+  
+  .historyItemDetails h3 {
+    font-size: 20px;
+  }
+  
+  .historyItemDetails p {
+    font-size: 14px;
+  }
+  
+  .historyItemDetails ul {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 830px) {
+  .container {
+    margin-top: 80px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
   .content {
     flex-direction: column;
     align-items: center;
-    gap: 34px;
+    gap: 50px;
   }
 
   .skills {
     width: 100%;
-    flex-direction: row;
     justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    width: 80px;
+  }
+
+  .skillImageContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .skillImageContainer img {
+    width: 45px;
+  }
+  
+  .skill p {
+    font-size: 16px;
   }
 
   .history {
     width: 100%;
-    gap: 9px;
+    gap: 20px;
+  }
+  
+  .historyItem {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillImageContainer {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .skillImageContainer img {
+    width: 40px;
+  }
+  
+  .skill p {
+    font-size: 14px;
+  }
+  
+  .historyItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .historyItem img {
+    margin-bottom: 10px;
+  }
+  
+  .historyItemDetails ul {
+    text-align: left;
   }
 }

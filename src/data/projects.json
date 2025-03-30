@@ -1,8 +1,8 @@
 [
   {
-    "title": "Exclusive Music player",
+    "title": "Music player",
     "imageSrc": "projects/Fera.png",
-    "description": "An Exclusive-Music-player built to demonstrate skills in HTML, CSS, and JavaScript, with validation and responsive design.",
+    "description": "An Music-player built to demonstrate skills in HTML, CSS, and JavaScript, with validation and responsive design.",
     "skills": ["HTML", "CSS", "JS"],
     "demo": "https://esnoko.github.io/HexSoftwares_Exclusive-Music-player/",
     "source": "https://github.com/esnoko/HexSoftwares_Exclusive-Music-player.git"

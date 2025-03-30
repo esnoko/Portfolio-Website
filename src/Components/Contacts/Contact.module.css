@@ -166,3 +166,23 @@
     text-align: center;
   }
 }
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  padding: 20px 10%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}
+
+.footerContent {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.footerContent p {
+  margin: 0;
+  color: var(--color-text);
+}

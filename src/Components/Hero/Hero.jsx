@@ -17,13 +17,8 @@ export const Hero = () => {
           web/mobile apps and continuously learning new technologies.
         </p>
         <div className={styles.buttonContainer}>
-          <button className={styles.contactBtn}>
-            <a href="mailto:elvisnoko18@email.com" className={styles.linkBtn}>
-              Contact Me
-            </a>
-          </button>
           <button className={styles.resumeBtn}>
-            <a href="#" className={styles.linkBtn}>
+            <a href="mailto:elvisnoko18@email.com" className={styles.linkBtn}>
               Download CV
             </a>
           </button>

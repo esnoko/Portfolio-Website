@@ -55,7 +55,7 @@
   gap: 20px;
 }
 
-.contactBtn, .resumeBtn {
+.resumeBtn {
   background-color: var(--color-primary);
   border: none;
   padding: 17px 26px;
@@ -72,12 +72,14 @@
   border: 2px solid var(--color-primary);
 }
 
-.contactBtn:hover, .resumeBtn:hover {
+ .resumeBtn:hover {
+  background-color: var(--color-primary);
   transform: translateY(-3px);
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 }
 
-.contactBtn:active, .resumeBtn:active {
+ .resumeBtn:active {
+  opacity: 0.5;
   transform: translateY(1px);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }

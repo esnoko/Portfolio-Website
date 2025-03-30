@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +14,7 @@
   width: 100%;
   position: relative;
   padding: 0;
-  margin: 0 0 40px 0; /* Add more space between sections */
-  overflow: visible; /* Allow content to be visible */
+  margin: 0 0 40px 0; 
+  overflow: visible; 
   display: block;
 }

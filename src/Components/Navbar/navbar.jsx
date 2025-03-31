@@ -1,11 +1,32 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("Menu open state:", menuOpen);
+  }, [menuOpen]);
+
+  const handleMenuItemClick = () => {
+    setTimeout(() => setMenuOpen(false), 0);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -13,7 +34,7 @@ export const Navbar = () => {
         Portfolio
       </a>
       <h1 className={styles.name}></h1>
-      <div className={styles.menu}>
+      <div className={styles.menu} ref={menuRef}>
         <img
           className={styles.menuBtn}
           src={
@@ -25,20 +46,27 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
+          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
         >
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleMenuItemClick}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#experience" onClick={handleMenuItemClick}>
+              Experience
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={handleMenuItemClick}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleMenuItemClick}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>

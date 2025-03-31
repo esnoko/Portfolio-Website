@@ -36,6 +36,8 @@
 
 .menuBtn {
   display: none;
+  cursor: pointer;
+  z-index: 4;
 }
 
 .menu {
@@ -88,8 +90,6 @@
 
   .menuBtn {
     display: block;
-    cursor: pointer;
-    z-index: 4;
   }
 
   .menuItems {

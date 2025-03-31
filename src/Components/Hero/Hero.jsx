@@ -17,7 +17,7 @@ export const Hero = () => {
         </p>
         <div className={styles.buttonContainer}>
           <a 
-            href="public/resume.pdf" 
+            href="resume.pdf" 
             className={`${styles.linkBtn} ${styles.resumeBtn}`}
             download="NokoDev_Resume.pdf"
             target="_blank" 

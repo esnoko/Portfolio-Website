@@ -26,7 +26,7 @@
   {
     "title": "tourney ops",
     "imageSrc": "projects/tourneyops.png",
-    "description": "a system for monitoring and archiving my Dota (an online video game) matches, allowing for storage and analysis.",
+    "description": "A system for monitoring and archiving my Dota (an online video game) matches, allowing for storage and analysis.",
     "skills": ["HTML", "CSS", "TypeScript"],
     "demo": "https://dev.tourney-ops.com/",
     "source": "https://github.com/esnoko"

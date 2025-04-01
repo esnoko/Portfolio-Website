@@ -79,6 +79,10 @@
   width: 100%;
 }
 
+.menuOpen {
+  display: flex !important;
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     padding: 0 20px;
@@ -121,10 +125,3 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .menuItems {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}

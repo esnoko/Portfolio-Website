@@ -6,10 +6,16 @@ import { getImageUrl } from "../../utils";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const menuBtnRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        menuBtnRef.current &&
+        !menuBtnRef.current.contains(event.target)
+      ) {
         setMenuOpen(false);
       }
     };
@@ -20,22 +26,14 @@ export const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("Menu open state:", menuOpen);
-  }, [menuOpen]);
-
-  const handleMenuItemClick = () => {
-    setTimeout(() => setMenuOpen(false), 0);
-  };
-
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
         Portfolio
       </a>
-      <h1 className={styles.name}></h1>
       <div className={styles.menu} ref={menuRef}>
         <img
+          ref={menuBtnRef}
           className={styles.menuBtn}
           src={
             menuOpen
@@ -43,28 +41,26 @@ export const Navbar = () => {
               : getImageUrl("nav/menuIcon.png")
           }
           alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen((prev) => !prev)}
         />
-        <ul
-          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-        >
+        <ul className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}>
           <li>
-            <a href="#about" onClick={handleMenuItemClick}>
+            <a href="#about" onClick={() => setMenuOpen(false)}>
               About
             </a>
           </li>
           <li>
-            <a href="#experience" onClick={handleMenuItemClick}>
+            <a href="#experience" onClick={() => setMenuOpen(false)}>
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={handleMenuItemClick}>
+            <a href="#projects" onClick={() => setMenuOpen(false)}>
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={handleMenuItemClick}>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
           </li>

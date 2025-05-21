@@ -29,5 +29,33 @@
       "Assisted in front-end and back-end development tasks"
     ],
     "imageSrc": "history/hexsoftwares.png"
+  },
+
+  {
+    "role": "Software Developer Intern (Remote)",
+    "organisation": "Cognifyz Technologies",
+    "startDate": "Nov, 2024",
+    "endDate": "March, 2025",
+    "experiences": [
+      "Built and improved a task-tracking application with persistent storage using file I/O operations.",
+      "Integrated data scraping capabilities to extract and display web content.",
+      "Delivered modular code for backend logic and file-based task management.",
+      "Collaborated in an agile team environment"
+    ],
+    "imageSrc": "history/CognifyzTechnologies.png"
+  },
+
+  {
+    "role": "Full-Stack Developer",
+    "organisation": "Moepi Publishing",
+    "startDate": "Apr, 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Developing and maintaining tekete application and digital solutions for publishing.",
+      "Developing a tekete application using PHP Laravel.",
+      "Assisting in front-end and back-end development tasks.",
+      "Collaborating with remote teams to improve system performance and deployment."
+    ],
+    "imageSrc": "history/moepipublishing.jfif"
   }
 ]

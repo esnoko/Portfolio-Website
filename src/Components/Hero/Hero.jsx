@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I&apos;m NokoDev</h1>
+        <h1 className={styles.title}>Hi, I&apos;m E.N Kgomo</h1>
         <p className={styles.description}>
           I&apos;m a <span className={styles.highlight}>Software Developer</span> specializing in full-stack development with
           React, Node.js, and Spring Boot. I have experience with Flutter,
@@ -19,7 +19,7 @@ export const Hero = () => {
           <a 
             href="resume.pdf" 
             className={`${styles.linkBtn} ${styles.resumeBtn}`}
-            download="NokoDev_Resume.pdf"
+            download="ENKgomo_Resume.pdf"
             target="_blank" 
             rel="noopener noreferrer"
           >

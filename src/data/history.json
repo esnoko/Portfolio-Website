@@ -1,34 +1,16 @@
 [
   {
-    "role": "IT Intern",
-    "organisation": "Pietersburg Provincial Hospital",
-    "startDate": "Jan, 2024",
-    "endDate": "Dec, 2024",
+    "role": "Full-Stack Developer",
+    "organisation": "Moepi Publishing",
+    "startDate": "Apr, 2025",
+    "endDate": "Present",
     "experiences": [
-      "Maintained hospital IT systems",
-      "Improved network security protocols",
-      "Assisted in setting up computer systems",
-      "Provided technical support to hospital staff",
-      "Helped in the implementation of electronic medical records",
-      "Conducted regular system backups and data recovery drills"
+      "Developing and maintaining tekete application and digital solutions for publishing.",
+      "Developing a tekete application using PHP Laravel.",
+      "Assisting in front-end and back-end development tasks.",
+      "Collaborating with remote teams to improve system performance and deployment."
     ],
-    "imageSrc": "history/google.png"
-  },
-
-  {
-    "role": "Web Developer Intern (Remote)",
-    "organisation": "Hexsoftwares",
-    "startDate": "Oct, 2024",
-    "endDate": "Jan, 2025",
-    "experiences": [
-      "Developed and maintained responsive web applications",
-      "Built interactive user interfaces with JavaScript and React",
-      "Integrated APIs to enhance functionality",
-      "Collaborated in an agile team environment",
-      "Optimized performance using Node.js",
-      "Assisted in front-end and back-end development tasks"
-    ],
-    "imageSrc": "history/hexsoftwares.png"
+    "imageSrc": "history/moepipublishing.jfif"
   },
 
   {
@@ -46,16 +28,18 @@
   },
 
   {
-    "role": "Full-Stack Developer",
-    "organisation": "Moepi Publishing",
-    "startDate": "Apr, 2025",
-    "endDate": "Present",
+    "role": "IT Intern",
+    "organisation": "Pietersburg Provincial Hospital",
+    "startDate": "Jan, 2024",
+    "endDate": "Dec, 2024",
     "experiences": [
-      "Developing and maintaining tekete application and digital solutions for publishing.",
-      "Developing a tekete application using PHP Laravel.",
-      "Assisting in front-end and back-end development tasks.",
-      "Collaborating with remote teams to improve system performance and deployment."
+      "Maintained hospital IT systems",
+      "Improved network security protocols",
+      "Assisted in setting up computer systems",
+      "Provided technical support to hospital staff",
+      "Helped in the implementation of electronic medical records",
+      "Conducted regular system backups and data recovery drills"
     ],
-    "imageSrc": "history/moepipublishing.jfif"
+    "imageSrc": "history/google.png"
   }
 ]

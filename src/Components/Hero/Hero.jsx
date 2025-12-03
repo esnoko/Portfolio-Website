@@ -10,9 +10,9 @@ export const Hero = () => {
         <h1 className={styles.title}>Hi, I&apos;m E.N Kgomo</h1>
         <p className={styles.description}>
           I&apos;m a <span className={styles.highlight}>Software Developer</span> specializing in full-stack development with
-          React, Node.js, and Spring Boot. I have experience with Flutter,
-          Angular, Vue, Laravel, Next.js and Express.js, along with MySQL,
-          MongoDB, Docker, Firebase, and Git. Passionate about building scalable
+          PHP, React, Java, and C++. I have experience with ReactNative,
+          Laravel, Next.js and Express.js, Spring Boot, Node.js, along with MySQL,
+          MongoDB, Firebase, and Git. Passionate about building scalable
           web/mobile apps and continuously learning new technologies.
         </p>
         <div className={styles.buttonContainer}>

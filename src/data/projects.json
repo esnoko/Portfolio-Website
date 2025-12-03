@@ -24,11 +24,11 @@
     "source": "https://github.com/esnoko/Movie_app.git"
   },
   {
-    "title": "tourney ops",
-    "imageSrc": "projects/tourneyops.png",
-    "description": "A system for monitoring and archiving my Dota (an online video game) matches, allowing for storage and analysis.",
-    "skills": ["HTML", "CSS", "TypeScript"],
-    "demo": "https://dev.tourney-ops.com/",
+    "title": "SafeSpace",
+    "imageSrc": "projects/safespace.png",
+    "description": "A secure web platform for reporting and managing sensitive abuse-related incidents.",
+    "skills": ["PHP (Laravel)", "MySQL", "Tailwind CSS"],
+    "demo": "https://teketesafespace.co.za/",
     "source": "https://github.com/esnoko"
   }
 ]
